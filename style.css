@@ -21,8 +21,114 @@ body{
     color:rgb(255, 255, 255);
 }
 
+a{
+    text-decoration: none;
+    font-size: 1.4rem;
+}
 
+.highlight{
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    font-size:1.8rem;
+    background:rgba(218, 218, 218, 0.192);
+    padding:6px;
+    border-radius: 6px;
+    text-align: center;
+    color:rgb(255, 255, 255);
+}
 
+.cool{
+    display: flex;
+    justify-content: space-between;
+    width:70%;
+    margin: 0 auto;
+    padding:35px 0px 0px 0px;
+}
 
+.cool li{
+    position: relative;
+    width:30%;
+    list-style-type: none;
+    color:rgb(0, 0, 0);
+}
 
+.dropdown1{
+    padding:20px;
+    margin-top:20px;
+}
 
+.dropdown{
+    display:none;
+    opacity:0;
+    will-change: opacity;
+    transition: all 0.3s;
+}
+
+.trigger-enter .dropdown {
+    display: block;
+}
+
+.trigger-enter-active .dropdown {
+  opacity: 1;
+}
+
+.dropdownBackground {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 50px 100px rgba(50,50,93,.1), 0 15px 35px rgba(50,50,93,.15), 0 5px 15px rgba(0,0,0,.1);
+    transition: all 0.3s, opacity 0.1s, transform 0.2s;
+    transform-origin: 50% 0;
+    display: flex;
+    justify-content: center;
+    opacity:0;
+}
+
+.arrow {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    display: block;
+    background: white;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.description img{
+    display:block;   
+    width:100%; 
+}
+
+.description p{
+    margin:0px;
+    font-size:1.1rem;
+    padding-top:15px;
+    color:rgb(0, 0, 0);
+}
+
+.dropdown__types,.dropdown__links{
+    margin-top:20px;
+    padding:20px;
+}
+
+.dropdown__types li{
+    width: max-content;
+    display: block;
+    margin:8px auto;
+}
+
+.dropdown__types li a{
+    color:#019FE9;
+}
+
+.dropdown__links li{
+    width:100%;
+    text-align: center;
+    margin:8px 0px 16px 0px;
+}
+
+.button[href*=twitter] { background: #019FE9;padding:8px 15px; border-radius: 3px; color: white;}
+.button[href*=instagram] { background: #D94D80; padding:8px 15px; border-radius: 3px;color:white;}
+.button[href*=blog] { background: #ffc600; padding:8px 15px; border-radius: 3px;color:white;}
